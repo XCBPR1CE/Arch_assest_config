@@ -1,0 +1,47 @@
+# 全局格式（从左到右：目录 -> Git -> Python -> 耗时 -> 状态 -> 提示符）
+format = """
+$directory$git_branch$git_status$python$cmd_duration$status$character"""
+
+# 目录：使用蓝色，限制层级深度
+[directory]
+style = "bold #7aa2f7"
+truncation_length = 3
+truncation_symbol = "…/"
+format = "[$path]($style) "
+
+# Git 分支：紫色，带分支图标
+[git_branch]
+symbol = " "
+style = "bold #bb9af7"
+format = "[$symbol$branch]($style) "
+
+# Git 状态：绿色/红色显示修改
+[git_status]
+style = "bold #9ece6a"
+format = '([$all_status$ahead_behind]($style) )'
+
+# Python 虚拟环境：黄色，带 Python 图标
+[python]
+symbol = " "
+style = "bold #e0af68"
+format = '([$symbol$virtualenv]($style) )'
+
+# 执行耗时：仅当超过 2 秒（2000ms）时显示，黄色沙漏图标
+[cmd_duration]
+min_time = 2000
+style = "bold #e0af68"
+format = "[$symbol$duration]($style) "
+
+# 状态：仅在报错时显示红色叉号，成功时不显示
+[status]
+disabled = false
+style = "bold #f7768e"
+format = "[$symbol]($style) "
+symbol = "✗ "
+success_symbol = "" # 成功时留空保持清爽
+
+# 提示符：现代的 > 样式，成功为绿色，失败为红色
+[character]
+success_symbol = "[❯](bold #9ece6a)"
+error_symbol = "[❯](bold #f7768e)"
+vimcmd_symbol = "[❮](bold #7dcfff)"

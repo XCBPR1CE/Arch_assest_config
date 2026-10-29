@@ -1,0 +1,56 @@
+# ==========================================
+# 1. 窗口设置 (透明与全屏)
+# ==========================================
+[window]
+# 透明度 (0.0 完全透明，1.0 完全不透明)
+opacity = 0.85
+# 隐藏窗口标题栏（更极简，如果你需要拖动，可以改为 "full"）
+decorations = "none"
+# 启动时的窗口大小
+dimensions = { columns = 100, lines = 30 }
+
+# ==========================================
+# 2. 字体设置 (为了让 Starship 图标正常显示)
+# ==========================================
+[font]
+size = 11.0
+
+[font.normal]
+# ⚠️ 这里必须是你系统里安装的 Nerd Font 字体名
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+# ==========================================
+# 3. 配色方案 (Tokyo Night 暗夜风格，和你的壁纸很搭)
+# ==========================================
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+
+[colors.normal]
+black   = "#15161e"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
+
+[colors.bright]
+black   = "#414868"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
