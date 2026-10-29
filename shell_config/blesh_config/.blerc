@@ -1,0 +1,4 @@
+bleopt highlight_syntax=1
+ble-face -s command_builtin fg=cyan
+ble-face -s command_alias fg=purple
+ble-face -s syntax_error fg=red,bold
