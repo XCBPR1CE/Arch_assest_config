@@ -24,9 +24,9 @@ initial/
 ├── docker_mirrors/
 │   └── daemon.json         # Docker 守护进程配置及镜像加速
 ├── shell_config/
-│   ├── bashrc_config       # Bash 环境配置
+│   ├── bashrc_config/      # Bash 环境配置
 │   │   └── .bashrc 
-│   └── blesh_config        # Ble.sh 配置
+│   └── blesh_config/       # Ble.sh 配置
 │       └── .blerc              
 ├── .gitignore              # Git 忽略规则，防止敏感信息被误传
 ├── README.md               # 导航主页

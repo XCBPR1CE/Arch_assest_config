@@ -23,9 +23,9 @@ initial/
 ├── docker_mirrors/
 │   └── daemon.json         # Docker daemon configuration for registry mirrors
 ├── shell_config/
-│   ├── bashrc_config       # Bash shell configuration
+│   ├── bashrc_config/      # Bash shell configuration
 │   │   └── .bashrc 
-│   └── blesh_config        # Ble.sh configuration
+│   └── blesh_config/       # Ble.sh configuration
 │       └── .blerc              
 ├── .gitignore              # Git ignore rules to prevent sensitive data leaks
 ├── README.md               # Navigation page
