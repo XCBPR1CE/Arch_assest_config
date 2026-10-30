@@ -21,8 +21,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/XCBPR1CE/initial.git
-cd initial
+git clone https://github.com/XCBPR1CE/Arch_assest_config.git
+cd Arch_assest_config
 
 # 1. 恢复 Starship
 cp Starship_style/starship.toml ~/.config/starship.toml

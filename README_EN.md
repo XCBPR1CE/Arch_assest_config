@@ -20,8 +20,8 @@ To apply these configurations on a new machine, clone this repository and copy t
 
 ```bash
 # Clone the repository
-git clone https://github.com/XCBPR1CE/initial.git
-cd initial
+git clone https://github.com/XCBPR1CE/Arch_assest_config.git
+cd Arch_assest_config
 
 # 1. Starship
 cp Starship_style/starship.toml ~/.config/starship.toml
