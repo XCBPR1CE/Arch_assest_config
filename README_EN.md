@@ -1,6 +1,6 @@
 # My Arch Linux Dotfiles 🐧
 
-[English](README_en.md) | [简体中文](README_zh.md)
+[English](README_EN.md) | [简体中文](README_ZH.md)
 
 ### 📖 Introduction
 This repository contains my personal configuration files for an Arch Linux environment. It is designed for cross-device synchronization and quick system recovery after a fresh installation. 
@@ -20,8 +20,8 @@ To apply these configurations on a new machine, clone this repository and copy t
 
 ```bash
 # Clone the repository
-git clone https://github.com/XCBPR1CE/asset_configurations.git
-cd asset_configurations
+git clone https://github.com/XCBPR1CE/initial.git
+cd initial
 
 # 1. Starship
 cp Starship_style/starship.toml ~/.config/starship.toml
@@ -30,8 +30,8 @@ cp Starship_style/starship.toml ~/.config/starship.toml
 cp alacritty_style/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # 3. Shell configs
-cp shell_config/.bashrc ~/.bashrc
-cp shell_config/.blerc ~/.blerc
+cp shell_config/bashrc_config/.bashrc ~/.bashrc
+cp shell_config/belsh_config/.blerc ~/.blerc
 source ~/.bashrc
 
 # 4. System/Docker Mirrors (Require sudo)

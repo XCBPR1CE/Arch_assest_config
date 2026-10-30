@@ -1,7 +1,7 @@
 
 # 我的 Arch Linux 配置文件备份 🐧
 
-[English](README_en.md) | [简体中文](README_zh.md)
+[English](README_EN.md) | [简体中文](README_ZH.md)
 
 ### 📖 简介
 本仓库用于存放我个人的 Arch Linux 环境配置文件。主要用于跨设备同步，以及重装系统后的快速环境恢复。
@@ -21,8 +21,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/XCBPR1CE/asset_configurations.git
-cd asset_configurations
+git clone https://github.com/XCBPR1CE/initial.git
+cd initial
 
 # 1. 恢复 Starship
 cp Starship_style/starship.toml ~/.config/starship.toml
@@ -31,8 +31,8 @@ cp Starship_style/starship.toml ~/.config/starship.toml
 cp alacritty_style/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # 3. 恢复 Shell 配置
-cp shell_config/.bashrc ~/.bashrc
-cp shell_config/.blerc ~/.blerc
+cp shell_config/bashrc_config/.bashrc ~/.bashrc
+cp shell_config/blesh_config/.blerc ~/.blerc
 source ~/.bashrc
 
 # 4. 恢复系统与 Docker 镜像源 (需要 sudo 权限)
